@@ -1,9 +1,4 @@
 Rails.application.routes.draw do
-  get '/styleguide/:action' => 'styleguide'
-  get '/styleguide' => 'styleguide#index'
-  resources :uploads do
-    post :image, on: :collection
-  end
   root 'welcome#index'
   resources :quotes
   # The priority is based upon order of creation: first created -> highest priority.
